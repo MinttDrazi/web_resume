@@ -1,0 +1,24 @@
+import ContentBlock from "~/components/ContentBlock";
+import EducationItem from "~/components/EducationItem";
+import { EDUCATION } from "~/constants/education";
+
+export default function Education() {
+  return (
+    <ContentBlock
+      title="Vzdělání"
+      outerClass="col-span-4 row-span-3 col-start-3 row-start-4"
+      innterClass="space-y-4 divide-y-2 divide-blush"
+    >
+      {EDUCATION.map((edu) => (
+        <EducationItem
+          key={edu.school}
+          school={edu.school}
+          specialization={edu.specialization}
+          from={edu.from}
+          to={edu.to}
+          level={edu.level}
+        />
+      ))}
+    </ContentBlock>
+  );
+}
