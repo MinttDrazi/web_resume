@@ -17,19 +17,24 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto flex space-x-10">
-      <div className="space-y-10">
-        <Photo />
-        <ContactInfo />
-        <Skills />
+    <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <Introduction />
+      <ContactInfo />
+      <Education />
+      <Skills />
+
+      <Employment />
+      <div className="space-y-10 order-last">
         <Techstack />
         <Languages />
       </div>
-      <div className="space-y-10">
-        <Introduction />
-        <Education />
-        <Employment />
-      </div>
+      {/* <div className="space-y-10">
+        
+      </div> */}
+      {/* <div className="space-y-10 lg:min-w-96"> */}
+      {/* <Photo /> */}
+
+      {/* </div> */}
     </div>
   );
 }
