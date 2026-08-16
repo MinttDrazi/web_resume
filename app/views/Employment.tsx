@@ -6,6 +6,7 @@ export default function Employment() {
   return (
     <ContentBlock
       title="Zaměstnání"
+      outerClass="col-span-2 order-4 lg:order-0"
       innterClass="space-y-4 divide-y-2 divide-blush"
     >
       {EMPLOYMENT.map((job) => (

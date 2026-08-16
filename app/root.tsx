@@ -52,7 +52,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="p-8 bg-cannoli">
+      <body className="py-16 px-8 bg-cannoli">
         {children}
         <ScrollRestoration />
         <Scripts />
