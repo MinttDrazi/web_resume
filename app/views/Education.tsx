@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <ContentBlock
       title="Vzdělání"
-      outerClass="col-span-2 order-3 lg:order-0"
+      outerClass="sm:col-span-2 order-3 lg:order-0"
       innterClass="space-y-4 divide-y-2 divide-blush"
     >
       {EDUCATION.map((edu) => (

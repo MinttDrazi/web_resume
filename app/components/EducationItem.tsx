@@ -18,7 +18,7 @@ export default function EducationItem({
 }: EducationItemProps) {
   return (
     <div className="pb-4">
-      <div className="grid grid-cols-[120px_1fr] gap-x-10">
+      <div className="grid sm:grid-cols-[120px_1fr] gap-y-1 gap-x-10">
         <Text size={"lg"}>
           {from}
           {" - "}
@@ -26,7 +26,7 @@ export default function EducationItem({
         </Text>
         <H5>{school}</H5>
       </div>
-      <div className="grid grid-cols-[120px_1fr] items-center gap-x-10">
+      <div className="grid sm:grid-cols-[120px_1fr] gap-y-1 items-center gap-x-10">
         <Text size={"base"} color={"coral"}>
           {level}
         </Text>

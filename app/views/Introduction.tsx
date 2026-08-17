@@ -5,7 +5,10 @@ import H5 from "~/components/typography/H5";
 
 export default function Introduction() {
   return (
-    <ContentBlock innterClass="space-y-3" outerClass="order-first col-span-2">
+    <ContentBlock
+      innterClass="space-y-2 sm:space-y-3"
+      outerClass="order-first sm:col-span-2"
+    >
       <H1>{import.meta.env.VITE_FULL_NAME}</H1>
       <H5 color={"coral"}>Account manager & Operations manager</H5>
       <Text className="text-justify">
