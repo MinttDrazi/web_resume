@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "~/utils/cn";
 
-const h5Variants = cva("text-lg font-bold", {
+const h5Variants = cva("text-base sm:text-lg font-bold", {
   variants: {
     color: {
       default: "text-navy",

@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "~/utils/cn";
 
-const h1Variants = cva("text-5xl uppercase font-extrabold", {
+const h1Variants = cva("text-4xl sm:text-5xl uppercase font-extrabold", {
   variants: {
     color: {
       default: "text-navy",

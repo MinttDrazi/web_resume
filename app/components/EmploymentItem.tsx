@@ -1,3 +1,4 @@
+import List from "./List";
 import Text from "./Text";
 import H5 from "./typography/H5";
 
@@ -17,7 +18,7 @@ export default function EmploymentItem({
   duties,
 }: EmploymentItemProps) {
   return (
-    <div className="grid grid-cols-[auto_1fr] gap-x-10 pb-4">
+    <div className="grid sm:grid-cols-[auto_1fr] gap-y-1 gap-x-10 pb-4">
       <Text size={"lg"}>
         {from}
         {" - "}
@@ -28,11 +29,7 @@ export default function EmploymentItem({
         <Text size={"base"} color={"coral"}>
           {position}
         </Text>
-        <ul className="mt-2 text-sm font-medium list-disc text-navy list-inside pl-0.5">
-          {duties.map((duty, index) => (
-            <li key={index}>{duty}</li>
-          ))}
-        </ul>
+        <List items={duties} className="mt-2" />
       </div>
     </div>
   );

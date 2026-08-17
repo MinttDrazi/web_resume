@@ -9,10 +9,10 @@ const textVariants = cva("font-medium", {
     },
     size: {
       xs: "text-xs",
-      default: "text-sm",
-      base: "text-base",
-      lg: "text-lg",
-      xl: "text-xl",
+      default: "text-xs sm:text-sm",
+      base: "text-sm sm:text-base",
+      lg: "text-base sm:text-lg",
+      xl: "text-lg sm:text-xl",
     },
   },
   defaultVariants: {

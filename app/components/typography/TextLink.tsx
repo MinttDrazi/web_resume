@@ -11,7 +11,7 @@ const outerLinkVariants = cva(
       },
       size: {
         xs: "text-xs",
-        default: "text-sm",
+        default: "text-xs sm:text-sm",
         base: "text-base",
         lg: "text-lg",
         xl: "text-xl",
