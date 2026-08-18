@@ -5,5 +5,5 @@ interface TechStackItemProps {
 }
 
 export default function TechStackItem({ tech }: TechStackItemProps) {
-  return <Text className="px-3 py-2 rounded-sm bg-blush">{tech}</Text>;
+  return <Text className="px-3 py-2 rounded-lg bg-blush/50">{tech}</Text>;
 }
