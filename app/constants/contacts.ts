@@ -15,11 +15,6 @@ export const CONTACT_INFO = [
     link: `mailto:${import.meta.env.VITE_EMAIL}`,
   },
   {
-    title: "Telefon",
-    text: import.meta.env.VITE_PHONE,
-    link: `tel:${import.meta.env.VITE_PHONE.replaceAll(" ", "")}`,
-  },
-  {
     title: "Lokalita",
     text: import.meta.env.VITE_LOCATION,
   },
