@@ -1,9 +1,17 @@
-export const TECHSTACK = [
-  "Claude",
-  "Chat GPT",
-  "Click Up",
-  "Github",
+export const TECHSTACK: string[] = [
+  "HTML",
+  "CSS",
   "Javascript",
   "Typescript",
   "PHP",
+  "Tailwind",
+  "Shadcn",
+  "Git",
+  "Github/Gitlab",
+  "SQL",
+  "MySQL",
+  "postgres",
+  "Docker",
+  "React",
+  "NextJS",
 ];

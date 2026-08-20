@@ -6,18 +6,18 @@ import H5 from "~/components/typography/H5";
 export default function Introduction() {
   return (
     <ContentBlock
-      innterClass="space-y-2 sm:space-y-3"
+      innterClass="space-y-2"
       outerClass="order-first sm:col-span-2"
     >
       <H1>{import.meta.env.VITE_FULL_NAME}</H1>
-      <H5 color={"coral"}>Account manager & Operations manager</H5>
+      <H5 color={"coral"}>Web developer & Tech lead</H5>
       <Text className="text-justify">
-        Mám chuť neustále růst, vytvářet nové věci a učit se. Rychle se
-        adaptuji, jsem samostatný a zvyklý pracovat v dynamickém prostředí – od
-        natáčení pro Apple TV až po vedení projektů, týmů a agentury flowstate
-        společně s jejím majitelem. Věnuji se i vlastní tvorbě v oblasti 3D
-        tisku a práci s 3D softwarem. Hledám příležitost, kde mohu smysluplně
-        přispívat, rozvíjet se a posouvat projekty, které mě baví.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan
+        tincidunt massa, vitae cursus odio egestas ac. Ut venenatis purus vitae
+        congue tempus. Vestibulum at dictum eros. Cras sodales interdum urna,
+        vel lacinia leo maximus eu. Aenean a odio mollis lectus aliquet laoreet
+        vel et justo. Vivamus nec blandit nunc. Nunc a diam euismod, posuere
+        neque vel, vehicula purus.
       </Text>
     </ContentBlock>
   );

@@ -10,14 +10,7 @@ export default function Education() {
       innterClass="space-y-4 divide-y-2 divide-blush"
     >
       {EDUCATION.map((edu) => (
-        <EducationItem
-          key={edu.school}
-          school={edu.school}
-          specialization={edu.specialization}
-          from={edu.from}
-          to={edu.to}
-          level={edu.level}
-        />
+        <EducationItem key={edu.school} education={edu} />
       ))}
     </ContentBlock>
   );
