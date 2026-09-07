@@ -6,18 +6,10 @@ export default function Education() {
   return (
     <ContentBlock
       title="Vzdělání"
-      outerClass="sm:col-span-2 order-3 lg:order-0"
       innterClass="space-y-4 divide-y-2 divide-blush"
     >
       {EDUCATION.map((edu) => (
-        <EducationItem
-          key={edu.school}
-          school={edu.school}
-          specialization={edu.specialization}
-          from={edu.from}
-          to={edu.to}
-          level={edu.level}
-        />
+        <EducationItem key={edu.school} education={edu} />
       ))}
     </ContentBlock>
   );

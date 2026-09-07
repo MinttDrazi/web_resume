@@ -1,36 +1,27 @@
+import type { Education } from "~/types";
 import Text from "./Text";
 import H5 from "./typography/H5";
 
 interface EducationItemProps {
-  school: string;
-  specialization: string;
-  from: number;
-  to: number;
-  level: string;
+  education: Education;
 }
 
-export default function EducationItem({
-  school,
-  specialization,
-  from,
-  to,
-  level,
-}: EducationItemProps) {
+export default function EducationItem({ education }: EducationItemProps) {
   return (
     <div className="pb-4">
-      <div className="grid sm:grid-cols-[120px_1fr] gap-y-1 gap-x-10">
+      <div className="grid sm:grid-cols-[190px_1fr] gap-y-1 gap-x-10">
         <Text size={"lg"}>
-          {from}
+          {education.from}
           {" - "}
-          {to}
+          {education.to}
         </Text>
-        <H5>{school}</H5>
+        <H5>{education.school}</H5>
       </div>
-      <div className="grid sm:grid-cols-[120px_1fr] gap-y-1 items-center gap-x-10">
+      <div className="grid sm:grid-cols-[190px_1fr] gap-y-1 items-center gap-x-10">
         <Text size={"base"} color={"coral"}>
-          {level}
+          {education.level}
         </Text>
-        <Text>{specialization}</Text>
+        <Text>{education.specialization}</Text>
       </div>
     </div>
   );

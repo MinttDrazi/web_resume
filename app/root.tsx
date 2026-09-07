@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", href: "/web_resume/icon.svg" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -52,7 +53,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="py-16 px-8 bg-cannoli">
+      <body className="px-8 pt-6 pb-16 bg-cannoli">
         {children}
         <ScrollRestoration />
         <Scripts />

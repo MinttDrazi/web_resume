@@ -4,7 +4,7 @@ import { SKILLS } from "~/constants/skills";
 
 export default function Skills() {
   return (
-    <ContentBlock title="Dovednosti" outerClass="order-2 lg:order-0">
+    <ContentBlock title="Dovednosti">
       <List items={SKILLS} markColor={"peach"} />
     </ContentBlock>
   );

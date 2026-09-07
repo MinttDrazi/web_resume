@@ -1,9 +1,9 @@
-export const SKILLS = [
-  "Vedení projektů a týmů",
-  "Návrh produktové logiky a UX flow",
-  "Nastavování procesů a interních systémů",
-  "Práce s daty a reporting výsledků",
-  "Řízení rozpočtů a fakturace",
-  "K oordinace kampaní a produkce",
-  "Prezentace a obhajoba výstupů",
+export const SKILLS: string[] = [
+  "Tvorba webů a webových aplikací",
+  "Implementace UI/UX designu",
+  "Nasazování webu a aplikací",
+  "Schopnost pracovat v týmu",
+  "Verzování kódu a práce s Git & GitFlow",
+  "Správa a konfigurace Linux serverů",
+  "Práce se serverless platformami",
 ];
