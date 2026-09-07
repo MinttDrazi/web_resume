@@ -1,9 +1,9 @@
 export const SKILLS: string[] = [
-  "Lorem ipsum dolor",
-  "Sit amet consectetur adipiscing",
-  "Aenean accumsan tincidunt",
-  "Mssa vitae cursus odio egestas",
-  "Ut venenatis purus vitae",
-  "Vestibulum at dictum eros",
-  "Aenean a odio mollis lectus aliquet",
+  "Tvorba webů a webových aplikací",
+  "Implementace UI/UX designu",
+  "Nasazování webu a aplikací",
+  "Schopnost pracovat v týmu",
+  "Verzování kódu a práce s Git & GitFlow",
+  "Správa a konfigurace Linux serverů",
+  "Práce se serverless platformami",
 ];

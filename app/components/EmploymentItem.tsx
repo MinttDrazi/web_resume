@@ -1,35 +1,26 @@
+import type { Employment } from "~/types";
 import List from "./List";
 import Text from "./Text";
 import H5 from "./typography/H5";
 
 interface EmploymentItemProps {
-  company: string;
-  position: string;
-  from: number;
-  to: number;
-  duties: string[];
+  employment: Employment;
 }
 
-export default function EmploymentItem({
-  company,
-  position,
-  from,
-  to,
-  duties,
-}: EmploymentItemProps) {
+export default function EmploymentItem({ employment }: EmploymentItemProps) {
   return (
     <div className="grid sm:grid-cols-[auto_1fr] gap-y-1 gap-x-10 pb-4">
       <Text size={"lg"}>
-        {from}
+        {employment.from}
         {" - "}
-        {to}
+        {employment.to}
       </Text>
       <div>
-        <H5>{company}</H5>
+        <H5>{employment.company}</H5>
         <Text size={"base"} color={"coral"}>
-          {position}
+          {employment.position}
         </Text>
-        <List items={duties} className="mt-2" />
+        <List items={employment.duties} className="mt-2" />
       </div>
     </div>
   );

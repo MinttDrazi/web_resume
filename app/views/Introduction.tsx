@@ -5,19 +5,15 @@ import H5 from "~/components/typography/H5";
 
 export default function Introduction() {
   return (
-    <ContentBlock
-      innterClass="space-y-2"
-      outerClass="order-first sm:col-span-2"
-    >
+    <ContentBlock innterClass="space-y-2">
       <H1>{import.meta.env.VITE_FULL_NAME}</H1>
-      <H5 color={"coral"}>Web developer & Tech lead</H5>
+      <H5 color={"coral"}>Full-stack Developer & Tech lead</H5>
       <Text className="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan
-        tincidunt massa, vitae cursus odio egestas ac. Ut venenatis purus vitae
-        congue tempus. Vestibulum at dictum eros. Cras sodales interdum urna,
-        vel lacinia leo maximus eu. Aenean a odio mollis lectus aliquet laoreet
-        vel et justo. Vivamus nec blandit nunc. Nunc a diam euismod, posuere
-        neque vel, vehicula purus.
+        Jsem fullstack developer se 6 lety zkušeností v IT. Soustředím se na
+        kompletní vývoj moderních webů a webových aplikací. Baví mě jak
+        implementace UI/UX, tak psaní backendu. Rád se učím nové věci a zkouším
+        nové postupy a technologie. V současnosti dokončuji magisterské studium
+        oboru Vývoj informačních systémů na VŠE.
       </Text>
     </ContentBlock>
   );
