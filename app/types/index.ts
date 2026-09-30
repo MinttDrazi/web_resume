@@ -1,17 +1,24 @@
+export type SupportedLang = "cs" | "en";
+
 export type Education = {
   school: string;
   specialization: string;
   from: number;
-  to: number | "současnost";
-  level: "Maturita" | "Bakalář" | "Inženýr";
+  to: number | string;
+  level: string;
 };
 
 export type Employment = {
   company: string;
   position: string;
   from: number;
-  to: number | "současnost";
+  to: number | string;
   duties: string[];
+};
+
+export type Language = {
+  language: string;
+  level: string;
 };
 
 export type Project = {

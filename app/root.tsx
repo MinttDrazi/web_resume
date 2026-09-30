@@ -3,12 +3,15 @@ import {
   Links,
   Meta,
   Outlet,
+  redirect,
   Scripts,
   ScrollRestoration,
 } from "react-router";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import useI18n from "./i18n/useI18n";
+import { DEFAULT_LANG, supportedLang } from "./i18n";
 
 export const links: Route.LinksFunction = () => [
   { rel: "icon", href: "/web_resume/icon.svg" },
@@ -44,9 +47,31 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+export async function clientLoader({
+  params,
+  request,
+}: Route.ClientLoaderArgs) {
+  if (params.lang && supportedLang.some((l) => l === params.lang)) {
+    return null;
+  }
+
+  const url = new URL(request.url);
+  const base = import.meta.env.BASE_URL;
+  const path = url.pathname.startsWith(base)
+    ? url.pathname.slice(base.length)
+    : url.pathname;
+
+  const segments = path.split("/").filter(Boolean);
+
+  if (params.lang && segments[0] === params.lang) segments.shift();
+
+  return redirect(`/${[DEFAULT_LANG, ...segments].join("/")}${url.search}`);
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const { lang } = useI18n();
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

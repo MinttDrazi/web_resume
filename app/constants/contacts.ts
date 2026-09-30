@@ -1,4 +1,6 @@
-export const CONTACT_INFO = [
+import type { Translations } from "~/i18n/translations";
+
+export const getContactInfo = (t: Translations) => [
   {
     title: "LinkedIn",
     text: import.meta.env.VITE_FULL_NAME,
@@ -15,7 +17,7 @@ export const CONTACT_INFO = [
     link: `mailto:${import.meta.env.VITE_EMAIL}`,
   },
   {
-    title: "Lokalita",
-    text: import.meta.env.VITE_LOCATION,
+    title: t.common.location,
+    text: t.common.city,
   },
 ];
