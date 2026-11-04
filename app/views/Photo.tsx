@@ -5,7 +5,7 @@ export default function Photo() {
     <ContentBlock>
       <img
         src="photo.jpg"
-        alt="Martin Ditz"
+        alt={import.meta.env.VITE_FULL_NAME}
 
         width={472}
         height={529}

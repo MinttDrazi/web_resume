@@ -39,8 +39,6 @@ jobs:
         env:
           VITE_FULL_NAME: ${{ secrets.VITE_FULL_NAME }}
           VITE_EMAIL: ${{ secrets.VITE_EMAIL }}
-          VITE_PHONE: ${{ secrets.VITE_PHONE }}
-          VITE_LOCATION: ${{ secrets.VITE_LOCATION }}
 
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
