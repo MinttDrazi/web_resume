@@ -5,4 +5,12 @@ export default {
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
   basename: "/web_resume/",
+  prerender: [
+    "/",
+    "/portfolio",
+    "/cs",
+    "/en",
+    "/cs/portfolio",
+    "/en/portfolio",
+  ],
 } satisfies Config;
