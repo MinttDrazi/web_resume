@@ -8,7 +8,7 @@ export const LANGUAGES: Record<SupportedLang, Language[]> = {
     },
     {
       language: "Angličtina",
-      level: "C1",
+      level: "C1 (C1 Advanced / CAE)",
     },
   ],
   en: [
@@ -18,7 +18,7 @@ export const LANGUAGES: Record<SupportedLang, Language[]> = {
     },
     {
       language: "English",
-      level: "C1",
+      level: "C1 (C1 Advanced / CAE)",
     },
   ],
 };
