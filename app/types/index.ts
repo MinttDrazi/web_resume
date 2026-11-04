@@ -11,8 +11,10 @@ export type Education = {
 export type Employment = {
   company: string;
   position: string;
-  from: number;
-  to: number | string;
+  fromYear: number;
+  fromMonth: string;
+  toYear: number | string;
+  toMonth: string;
   duties: string[];
 };
 
