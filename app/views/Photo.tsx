@@ -4,7 +4,7 @@ export default function Photo() {
   return (
     <ContentBlock>
       <img
-        src="photo.jpg"
+        src="/web_resume/photo.jpg"
         alt={import.meta.env.VITE_FULL_NAME}
 
         width={472}

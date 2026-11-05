@@ -1,7 +1,7 @@
 {
   "name": "web-resume",
   "private": true,
-  "homepage": "https://minttdrazi.github.io/web_resume",
+  "homepage": "https://minttdrazi.github.io/web_resume/",
   "type": "module",
   "scripts": {
     "build": "react-router build",
