@@ -6,6 +6,7 @@ import {
   redirect,
   Scripts,
   ScrollRestoration,
+  useMatches,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -63,10 +64,11 @@ export async function clientLoader({
 
   const segments = path.split("/").filter(Boolean);
 
-  if (!supportedLang.some((l) => l === segments[0]))
-    segments.unshift(DEFAULT_LANG);
+  if (params.lang && segments[0] === params.lang) {
+    segments.shift();
+  }
 
-  return redirect(`/${segments.join("/")}${url.search}`);
+  return redirect(`/${[DEFAULT_LANG, ...segments].join("/")}${url.search}`);
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
