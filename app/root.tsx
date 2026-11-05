@@ -63,9 +63,10 @@ export async function clientLoader({
 
   const segments = path.split("/").filter(Boolean);
 
-  if (params.lang && segments[0] === params.lang) segments.shift();
+  if (!supportedLang.some((l) => l === segments[0]))
+    segments.unshift(DEFAULT_LANG);
 
-  return redirect(`/${[DEFAULT_LANG, ...segments].join("/")}${url.search}`);
+  return redirect(`/${segments.join("/")}${url.search}`);
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 export default {
+  ssr: false,
   basename: "/web_resume/",
   prerender: [
     "/",
