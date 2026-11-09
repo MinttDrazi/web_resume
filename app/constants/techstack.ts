@@ -18,4 +18,6 @@ export const TECHSTACK: string[] = [
   "NextJS",
   "Laravel",
   "Hono",
+  "Python",
+  "Go",
 ];
